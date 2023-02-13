@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+        to bottom, 
+        #8257E5 0%, 
+        #271A45 100%
+        );
+}
