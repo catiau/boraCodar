@@ -70,10 +70,14 @@ body {
     gap: 12px;
 }
 
-.keyboard button {
+button {
     border: 0;
     width: 64px;
     height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: linear-gradient(
         180deg, 
@@ -109,6 +113,7 @@ body {
 }
 
 .quartiary {
+    color: #ebebeb;
     background: linear-gradient(
         180deg, rgba(0, 0, 0, 0.15) 0%, 
         rgba(255, 255, 255, 0.05) 100%), #7F45E2;
