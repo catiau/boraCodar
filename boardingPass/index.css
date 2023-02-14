@@ -2,12 +2,166 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+
     background-image: linear-gradient(
         to bottom, 
         #8257E5 0%, 
         #271A45 100%
-        );
+    );
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    font-family: 'Rubik', sans-serif;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+}
+
+main {
+    width: 327px;
+    height: 656px;
+}
+
+.flightInfo {
+
+    width: 327px;
+    height: 191px;
+
+    background: #FFFFFF;
+
+    margin-top: 20px;
+    padding-top: 24px;
+    padding-inline: 32px;
+
+    --mask: radial-gradient(12px at 12px 100%, transparent 98%, #fff) -12px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+
+
+
+}
+
+.flightInfo header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2.5rem;
+}
+
+
+.boardTicket  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+.boardTicket strong {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+
+.flightInfoRight {
+    text-align: right;
+}
+
+.flightInfoLeft {
+    text-align: left;
+}
+
+.locales {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.locales h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.02em;
+
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.locales data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+   
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.from {
+    text-align: left;
+}
+
+.to {
+    text-align: right;
+}
+
+
+
+.passengerInfo {
+    width: 327px;
+    height: 84px;
+
+    background: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;;
+
+    padding-top: 24px;
+    padding-inline: 32px;
+
+    --mask: radial-gradient(12px at 12px 12px, transparent 98%, #fff) -12px -12px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask)
+
+}
+
+.passengerName {
+    text-align: left;
+}
+
+.passengerSeat {
+    text-align: right;
+}
+
+.flightQRCode {
+    display: flex;
+}
+
+
+footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    opacity: 0.64;
+    letter-spacing: -0.02em;
 }

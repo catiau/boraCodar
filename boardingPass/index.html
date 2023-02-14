@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="./index.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boarding Pass</title>
+    <title>Cartão de Embarque</title>
 </head>
 <body>
-    <main>
-        <header>
+    <main class="boardTicket">
+        <head>
             <h3>Cartão de Embarque</h3>
-        </header>
+        </head>
 
-        <div class="boardPassContainer">
+        <div class="flightInfo">
+            <header>
+                <div class="flightInfoLeft">
+                    <p>Voo</p>
+                    <strong>RS995</strong>
+                </div>
+                <div class="flightInfoRight">
+                    <p>Data</p>
+                    <strong>23/05/2023</strong>
+                </div>
+            </header>
+            <div class="locales">
+                <div class="from">
+                    <p>São Paulo, Brasil</p>
+                    <h1>GRU</h1>
+                    <data>17:00</data>
+                </div>
+                <img src="./assets/airplane.svg" alt="">
+                <div class="to">
+                    <p>São Francisco, EUA</p>
+                    <h1>SFO</h1>
+                    <data>04:48</data>
+                </div>
+            </div>
+        </div>
+        <div class="passengerInfo">
+            <div class="passengerName">
+                <p>Passageiro</p>
+                <strong>Cauan Teixeira</strong>
+            </div>
+            <div class="passengerSeat">
+                <p>Assento</p>
+                <strong>28A</strong>
+            </div>
+        </div>
+        <div class="flightQRCode">
+            <div>
+                <div>
+                    <p>Embarque</p>
+                    <data>16:15</data>
+                </div>
+                <div>
+                    <p>Terminal</p>
+                    <strong>2</strong>
+                </div>
+                <div>
+                    <p>Portão</p>
+                    <strong>15</strong>
+                </div>
+            </div>
+            <div>
 
+            </div>
         </div>
 
         <footer>
