@@ -140,7 +140,12 @@ main {
 
     --mask: radial-gradient(12px at 12px 12px, transparent 98%, #fff) -12px -12px;
     -webkit-mask: var(--mask);
-    mask: var(--mask)
+    mask: var(--mask);
+
+    border: 1px dashed rgba(0, 0, 0, 0.32);
+    border-left: 0;
+    border-right: 0;
+
 
 }
 
@@ -152,12 +157,54 @@ main {
     text-align: right;
 }
 
-.flightQRCode {
+.boardingInfo {
+    width: 327px;
+    heigth: 267px;
+
+    background: #FFFFFF;
+
+    padding: 24px 32px;
+
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    --mask: radial-gradient(12px at 12px 0, transparent 98%, #fff) -12px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
     display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.flightQRCode {
+    display: flex;,
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boardingInfoLeft data{
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 19px;
+    background: #633bbc;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.boardingInfoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
 }
 
 
+
 footer {
+    padding-top: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
