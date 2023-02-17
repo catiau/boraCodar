@@ -137,3 +137,37 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .switcher {
+    width: 19rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+    background: #FFFF;
+  }
+
+  main button {
+    padding: 0.4rem 2.4rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .btn1 {
+    color: #FFFF;
+    background: #6246EA;
+  }
+
+  .btn2 {
+    color: #6246EA;
+    background: #FFFF;
+  }
