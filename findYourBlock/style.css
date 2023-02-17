@@ -81,9 +81,13 @@
     right: 0;
   }
 
-  .headerInput input {
+  .headerInput div {
     width: 34.8rem;
     height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
     padding: 1rem;
 
@@ -93,4 +97,43 @@
 
     color: #7C7C8A;
 
+  }
+
+  .headerInput input {
+    width: 100%;
+    border: 0;
+    background: #F4F4FF;
+  }
+
+  .headerInput input:focus {
+    outline: none;
+  }
+
+  .headerInput button {
+    width: 16.9rem;
+    height: 4.8rem;
+
+    background: #6246EA;
+    border-radius: 0.5rem;
+    border: 0;
+
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  main {
+    padding: 10rem 11.2rem;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 4.5rem;
+    color: #121214;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
