@@ -54,9 +54,15 @@ section h2 {
     width: 27rem;
     padding: 1.6rem;
     border-radius: .8rem;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
 }
 
-.money-wrapper:hover {
+.money-wrapper:hover,
+.money-wrapper:has(:focus) {
     outline: 0.25rem solid #7C3AED;
 }
 
@@ -70,7 +76,16 @@ section h2 {
 }
 
 .amount:focus {
-    outline: 0;
+    outline: 0; 
+}
+
+/* Dropdown */
+.dropdown {
+    width: 12.4rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .cambio .wrapper {
